@@ -10,11 +10,30 @@
   <title>Vrij Vlot Design | Professionele Website & Fotografie binnen 24 uur</title>
   <meta name="description"
     content="Je eigen zakelijke website inclusief high-end fotoshoot. Razendsnel online, professionele uitstraling en betalen bij tevredenheid. Ontdek Vrij Vlot Design.">
+  <link rel="canonical" href="https://vrijvlotdesign.nl/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vrijvlotdesign.nl/">
+  <meta property="og:title" content="Vrij Vlot Design | Professionele Website & Fotografie binnen 24 uur">
+  <meta property="og:description"
+    content="Je eigen zakelijke website inclusief high-end fotoshoot. Razendsnel online en vlijmscherp in beeld.">
+  <meta property="og:image" content="https://vrijvlotdesign.nl/header.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://vrijvlotdesign.nl/">
+  <meta property="twitter:title" content="Vrij Vlot Design | Professionele Website & Fotografie binnen 24 uur">
+  <meta property="twitter:description"
+    content="Je eigen zakelijke website inclusief high-end fotoshoot. Razendsnel online en vlijmscherp in beeld.">
+  <meta property="twitter:image" content="https://vrijvlotdesign.nl/header.jpg">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/src/style.css">
 
   <!-- JSON-LD Schema Markup -->
@@ -23,18 +42,21 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Vrij Vlot Design",
-      "image": "https://vrijvlotdesign.nl/logo.png", 
+      "image": "https://vrijvlotdesign.nl/header.jpg", 
       "url": "https://vrijvlotdesign.nl/",
-      "telephone": "", 
+      "telephone": "+31624893014", 
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Nederland",
+        "streetAddress": "Surinamestraat 13",
+        "addressLocality": "Leeuwarden",
+        "postalCode": "8931CW",
+        "addressRegion": "Friesland",
         "addressCountry": "NL"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "",
-        "longitude": ""
+        "latitude": "53.1866",
+        "longitude": "5.8111"
       },
       "priceRange": "€€",
       "openingHoursSpecification": {
@@ -49,7 +71,9 @@
         "opens": "09:00",
         "closes": "17:00"
       },
-      "sameAs": [] 
+      "sameAs": [
+        "https://wa.me/31624893014"
+      ] 
     }
     </script>
 </head>
@@ -69,7 +93,7 @@
 
   <!-- Hero Section -->
   <header class="relative h-screen flex items-center justify-center overflow-hidden parallax"
-    style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+    style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/header.jpg');">
     <div class="container mx-auto px-4 text-center text-white relative z-10 reveal active">
       <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
         Jouw vakmanschap verdient een website die wél werkt.
@@ -90,9 +114,7 @@
     <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
       <div class="md:w-1/2 reveal reveal-left">
         <div class="relative group">
-          <img
-            src="https://images.unsplash.com/photo-1547489432-cf93fa6c71ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-            alt="Zardy de Haan in actie" loading="lazy"
+          <img src="/overmij.jpg" alt="Zardy de Haan - Webdesigner & Fotograaf in Leeuwarden" loading="lazy"
             class="rounded-lg shadow-2xl w-full h-auto object-cover aspect-[4/5] object-center">
           <div
             class="absolute inset-0 bg-primary/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
@@ -196,8 +218,10 @@
     <div class="container mx-auto px-4 reveal">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold mb-4">Abonnementen: Service & Onderhoud</h2>
-        <p class="text-gray-400 max-w-2xl mx-auto">Kies het service-niveau dat bij jouw ambities past. Maandelijks
-          opzegbaar.</p>
+        <p class="text-gray-400 max-w-2xl mx-auto">Kies het service-niveau dat bij jouw ambities past.
+          <strong>Maandelijks
+            opzegbaar.</strong>
+        </p>
       </div>
 
       <div class="overflow-x-auto">
@@ -534,11 +558,23 @@
                 class="w-full bg-white border-2 border-gray-100 rounded-xl px-4 py-4 focus:outline-none focus:border-primary transition-all text-lg"
                 placeholder="Naam van je zaak">
             </div>
-            <div class="space-y-2 md:col-span-2">
+            <div class="space-y-2">
               <label for="email" class="block text-sm font-bold text-gray-700">E-mailadres</label>
               <input type="email" id="email" name="email" required
                 class="w-full bg-white border-2 border-gray-100 rounded-xl px-4 py-4 focus:outline-none focus:border-primary transition-all text-lg"
                 placeholder="jouw@email.nl">
+            </div>
+            <div class="space-y-2">
+              <label for="phone" class="block text-sm font-bold text-gray-700">Telefoonnummer</label>
+              <input type="tel" id="phone" name="telefoon" required
+                class="w-full bg-white border-2 border-gray-100 rounded-xl px-4 py-4 focus:outline-none focus:border-primary transition-all text-lg"
+                placeholder="06 12345678">
+            </div>
+            <div class="space-y-2 md:col-span-2">
+              <label for="message" class="block text-sm font-bold text-gray-700">Extra opties of opmerkingen</label>
+              <textarea id="message" name="bericht" rows="4"
+                class="w-full bg-white border-2 border-gray-100 rounded-xl px-4 py-4 focus:outline-none focus:border-primary transition-all text-lg"
+                placeholder="Heb je specifieke wensen of vragen? Laat het hier weten."></textarea>
             </div>
           </div>
         </div>

@@ -4,7 +4,26 @@
   --color-primary: #f59e0b;
   --color-dark: #111827;
   --color-light: #f3f4f6;
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'EB Garamond', serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-serif);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  nav,
+  button,
+  .font-sans {
+    font-family: var(--font-sans);
+  }
 }
 
 @layer utilities {

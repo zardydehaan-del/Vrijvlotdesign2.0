@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
 
   <!-- JSON-LD Schema Markup -->
   <script type="application/ld+json">
@@ -57,12 +58,13 @@
 
   <!-- Floating WhatsApp Button -->
   <a href="https://wa.me/31624893014" target="_blank" rel="noopener noreferrer"
-    class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition-transform hover:scale-110 animate-bounce-slow flex items-center justify-center w-14 h-14"
+    class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full shadow-lg transition-transform hover:scale-110 animate-bounce-slow flex items-center justify-center gap-2"
     aria-label="Chat via WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
       <path
         d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
     </svg>
+    <span class="font-bold">Vragen? App direct.</span>
   </a>
 
   <!-- Hero Section -->
@@ -70,167 +72,335 @@
     style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
     <div class="container mx-auto px-4 text-center text-white relative z-10 reveal active">
       <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-        Vrij Vlot Design | Website & Fotografie
+        Jouw vakmanschap verdient een website die wél werkt.
       </h1>
       <p class="text-xl md:text-2xl mb-8 font-light max-w-2xl mx-auto">
         Vandaag in beeld, morgen online. Jouw professionele website inclusief high-end fotografie, live binnen 24 uur.
         Betaal pas als je 100% tevreden bent.
       </p>
-      <a href="#contact"
+      <a href="#configurator"
         class="inline-block bg-primary hover:bg-yellow-600 text-white font-semibold py-3 px-8 rounded-full transition-colors duration-300 shadow-lg transform hover:scale-105">
         Vraag een gratis demo aan
       </a>
     </div>
   </header>
 
-  <!-- Craftsmanship & Photography -->
+  <!-- Zardy de Haan: About Me Section -->
   <section class="py-20 bg-light" id="over-mij">
     <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
-      <div class="md:w-1/2 reveal">
-        <img
-          src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-          alt="Professionele fotoshoot Sony A7 IV camera lens close-up" loading="lazy"
-          class="rounded-lg shadow-2xl w-full h-auto object-cover aspect-video">
+      <div class="md:w-1/2 reveal reveal-left">
+        <div class="relative group">
+          <img
+            src="https://images.unsplash.com/photo-1547489432-cf93fa6c71ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+            alt="Zardy de Haan in actie" loading="lazy"
+            class="rounded-lg shadow-2xl w-full h-auto object-cover aspect-[4/5] object-center">
+          <div
+            class="absolute inset-0 bg-primary/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="bg-white text-dark font-bold px-4 py-2 rounded-full shadow-lg">Zardy de Haan</span>
+          </div>
+        </div>
       </div>
-      <article class="md:w-1/2 reveal">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-dark">
-          Over Mij: Geen templates, maar puur vakmanschap
+      <article class="md:w-1/2 reveal reveal-right">
+        <h2 class="text-3xl md:text-5xl font-black mb-6 text-dark leading-tight">
+          Zardy de Haan: Van stuntwerk naar strak webdesign.
         </h2>
         <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-          In een wereld vol standaard stockfoto's maak ik het verschil met authentieke beelden. Ik kom persoonlijk langs
-          met mijn Sony A7 IV om jouw zaak en team vast te leggen.
+          Ruim <strong>20 jaar lang</strong> was mijn wereld die van adrenaline, discipline en precisie als
+          professioneel stuntman en freerunner. In die wereld is er geen ruimte voor 'halverwege'. Elke beweging moet
+          perfect zijn, elke landing gecontroleerd.
         </p>
-        <p class="text-lg text-gray-700 leading-relaxed">
-          Geen trage processen, maar de discipline van een topsporter gecombineerd met oog voor detail. Een unieke
-          presentatie die jouw klanten direct aanspreekt.
+        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+          Diezelfde onvermoeibare focus en topsportmentaliteit neem ik mee naar mijn werk als webdesigner. Ik geloof
+          niet in trage trajecten of vage afspraken. Ik werk nuchter, krachtig en met de obsessie voor detail die nodig
+          is om jouw vakmanschap binnen 24 uur professioneel online te krijgen.
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed font-semibold">
+          Geen praatjes, maar prestaties. Vandaag in beeld, morgen online.
         </p>
       </article>
     </div>
   </section>
 
-  <!-- Packages Section -->
-  <section class="py-20 bg-white" id="pakketten">
+  <!-- Packages Section (De Bouwkosten) -->
+  <section class="py-24 bg-white" id="pakketten">
     <div class="container mx-auto px-4 text-center reveal">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Pakketten</h2>
-      <p class="text-gray-600 mb-12">Betaling bij 100% tevredenheid - Transparante prijzen</p>
+      <h2 class="text-4xl font-bold mb-4">De Bouwkosten</h2>
+      <p class="text-gray-600 mb-16 max-w-2xl mx-auto text-lg">Transparante prijzen voor vakmanschap. Betaling bij 100%
+        tevredenheid.</p>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Basis Package -->
+        <!-- Snelle Starter -->
         <article
-          class="border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 flex flex-col">
-          <h3 class="text-2xl font-semibold mb-2">Basis</h3>
-          <div class="text-4xl font-bold text-primary mb-6">€495</div>
-          <ul class="text-left space-y-3 mb-8 flex-grow">
-            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Professionele One-pager</li>
-            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Basis fotografie sessie</li>
-            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Mobiel geoptimaliseerd voor MKB
+          class="package-card cursor-pointer bg-white border border-gray-100 rounded-2xl p-10 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col text-left reveal delay-100">
+          <h3 class="text-2xl font-bold mb-2">De Snelle Starter</h3>
+          <div class="text-4xl font-black text-primary mb-6">€495,-</div>
+          <ul class="space-y-4 mb-10 flex-grow text-gray-700">
+            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> <strong>High-end
+                onepager</strong></li>
+            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> Volledig responsive</li>
+            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> AI-fotobewerking eigen beelden
             </li>
-            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Snelle laadtijd</li>
+            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> Live binnen 24 uur</li>
           </ul>
-          <a href="#contact"
-            class="block w-full py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-colors">Selecteer
-            Basis</a>
+          <a href="#configurator"
+            class="block w-full py-4 bg-gray-900 text-white font-bold rounded-xl hover:bg-primary transition-colors text-center shadow-lg">
+            Kies Starter
+          </a>
         </article>
 
-        <!-- Pro Package (Popular) -->
+        <!-- Pro Vakman (Popular) -->
         <article
-          class="border-2 border-primary rounded-xl p-8 shadow-lg transform md:-translate-y-4 relative bg-gray-50 flex flex-col">
+          class="package-card cursor-pointer bg-white border-2 border-primary rounded-2xl p-10 shadow-xl transform md:-translate-y-4 relative flex flex-col text-left transition-all duration-500 hover:-translate-y-6 reveal delay-200">
           <div
-            class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg uppercase tracking-wide">
-            Populair</div>
-          <h3 class="text-2xl font-semibold mb-2">Pro</h3>
-          <div class="text-4xl font-bold text-primary mb-6">€745</div>
-          <ul class="text-left space-y-3 mb-8 flex-grow">
-            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Uitgebreide website (tot 5
-              pagina's)</li>
-            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Uitgebreide fotografie shoot</li>
-            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> SEO optimalisatie basis</li>
-            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Live in 24 uur na shoot</li>
+            class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white text-sm font-bold px-6 py-2 rounded-full uppercase tracking-widest shadow-lg">
+            Meest Gekozen</div>
+          <h3 class="text-2xl font-bold mb-2 pt-2">De Pro Vakman</h3>
+          <div class="text-4xl font-black text-primary mb-6">€745,-</div>
+          <ul class="space-y-4 mb-10 flex-grow text-gray-700">
+            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> Alles uit Starter</li>
+            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> <strong>Sony A7 IV fotoshoot (1
+                uur)</strong></li>
+            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> Uitgebreid visueel portfolio</li>
+            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> Professionele tekst-optimalisatie
+            </li>
           </ul>
-          <a href="#contact"
-            class="block w-full py-3 bg-primary text-white font-semibold rounded-lg hover:bg-yellow-600 transition-colors">Selecteer
-            Pro</a>
+          <a href="#configurator"
+            class="block w-full py-4 bg-primary text-white font-bold rounded-xl hover:bg-yellow-600 transition-colors text-center shadow-lg">
+            Kies Pro
+          </a>
         </article>
 
-        <!-- Growth Package -->
+        <!-- Groei Machine -->
         <article
-          class="border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 flex flex-col">
-          <h3 class="text-2xl font-semibold mb-2">Groei</h3>
-          <div class="text-4xl font-bold text-primary mb-6">€995</div>
-          <ul class="text-left space-y-3 mb-8 flex-grow">
-            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Complete bedrijfswebsite</li>
-            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> High-end portretten team</li>
-            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Google Mijn Bedrijf setup</li>
-            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Social media integratie</li>
+          class="package-card cursor-pointer bg-white border border-gray-100 rounded-2xl p-10 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col text-left reveal delay-300">
+          <h3 class="text-2xl font-bold mb-2">De Groei Machine</h3>
+          <div class="text-4xl font-black text-primary mb-6">€995,-</div>
+          <ul class="space-y-4 mb-10 flex-grow text-gray-700">
+            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> Alles uit Pro</li>
+            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> <strong>Cinematic Vertical
+                Video</strong></li>
+            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> Smart Offerte-formulier</li>
+            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> QR-Review systeem</li>
           </ul>
-          <a href="#contact"
-            class="block w-full py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-colors">Selecteer
-            Groei</a>
+          <a href="#configurator"
+            class="block w-full py-4 bg-gray-900 text-white font-bold rounded-xl hover:bg-primary transition-colors text-center shadow-lg">
+            Kies Groei
+          </a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Service & Maintenance -->
-  <section class="py-20 bg-dark text-white" id="diensten">
-    <div class="container mx-auto px-4 text-center reveal">
-      <h2 class="text-3xl md:text-4xl font-bold mb-12">Diensten: Service & Onderhoud</h2>
-      <div class="flex flex-col md:flex-row justify-center gap-8 max-w-4xl mx-auto">
-        <article class="bg-gray-800 p-8 rounded-xl flex-1 text-left">
-          <h3 class="text-xl font-bold mb-2">Basis Onderhoud</h3>
-          <div class="text-3xl text-primary font-bold mb-4">€29 <span
-              class="text-sm font-normal text-gray-400">p/m</span></div>
-          <p class="text-gray-400 mb-4">Hosting, SSL certificaat en dagelijkse back-ups. Zorgeloos online.</p>
-        </article>
-        <article class="bg-gray-800 p-8 rounded-xl flex-1 text-left border border-primary">
-          <h3 class="text-xl font-bold mb-2">Premium Service</h3>
-          <div class="text-3xl text-primary font-bold mb-4">€49 <span
-              class="text-sm font-normal text-gray-400">p/m</span></div>
-          <p class="text-gray-400 mb-4">Alles van Basis + ondersteuning voor tekstuele en visuele wijzigingen.</p>
-        </article>
+  <!-- Service & Maintenance Section (Abonnementen) -->
+  <section class="py-24 bg-dark text-white" id="diensten">
+    <div class="container mx-auto px-4 reveal">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Abonnementen: Service & Onderhoud</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">Kies het service-niveau dat bij jouw ambities past. Maandelijks
+          opzegbaar.</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse min-w-[800px]">
+          <thead>
+            <tr class="border-b border-gray-800">
+              <th class="py-6 px-4 text-gray-400 font-medium">Serviceonderdeel</th>
+              <th class="py-6 px-4">
+                <div class="text-xl font-bold">Basis</div>
+                <div class="text-primary text-2xl font-black">€29,- <span
+                    class="text-sm font-normal text-gray-500">p/m</span></div>
+              </th>
+              <th class="py-6 px-4 border-x border-gray-800 bg-gray-900/50">
+                <div class="text-xl font-bold">Pro</div>
+                <div class="text-primary text-2xl font-black">€49,- <span
+                    class="text-sm font-normal text-gray-500">p/m</span></div>
+              </th>
+              <th class="py-6 px-4">
+                <div class="text-xl font-bold">Groei</div>
+                <div class="text-primary text-2xl font-black">€79,- <span
+                    class="text-sm font-normal text-gray-500">p/m</span></div>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-300">
+            <tr class="border-b border-gray-800 hover:bg-white/5 transition-colors">
+              <td class="py-5 px-4 font-medium">Hosting & SSL Certificaat</td>
+              <td class="py-5 px-4 text-primary text-xl">✓</td>
+              <td class="py-5 px-4 text-primary text-xl border-x border-gray-800 bg-gray-900/30 text-center">✓</td>
+              <td class="py-5 px-4 text-primary text-xl">✓</td>
+            </tr>
+            <tr class="border-b border-gray-800 hover:bg-white/5 transition-colors">
+              <td class="py-5 px-4 font-medium">E-mailaccounts</td>
+              <td class="py-5 px-4">1 account</td>
+              <td class="py-5 px-4 border-x border-gray-800 bg-gray-900/30 text-center text-white font-semibold">3
+                accounts</td>
+              <td class="py-5 px-4">Onbeperkt</td>
+            </tr>
+            <tr class="border-b border-gray-800 hover:bg-white/5 transition-colors">
+              <td class="py-5 px-4 font-medium">Support & Wijzigingen</td>
+              <td class="py-5 px-4">Tekst-support</td>
+              <td class="py-5 px-4 border-x border-gray-800 bg-gray-900/30 text-center text-white font-semibold">
+                Portfolio updates</td>
+              <td class="py-5 px-4 font-bold text-white">Priority support</td>
+            </tr>
+            <tr class="border-b border-gray-800 hover:bg-white/5 transition-colors">
+              <td class="py-5 px-4 font-medium">Marketing & SEO</td>
+              <td class="py-5 px-4 text-gray-600">-</td>
+              <td class="py-5 px-4 border-x border-gray-800 bg-gray-900/30 text-center">Google Maps beheer</td>
+              <td class="py-5 px-4">SEO-monitoring</td>
+            </tr>
+            <tr class="hover:bg-white/5 transition-colors">
+              <td class="py-5 px-4 font-medium">Controle & Rapportage</td>
+              <td class="py-5 px-4 text-gray-600">-</td>
+              <td class="py-5 px-4 border-x border-gray-800 bg-gray-900/30 text-center">Kwartaal-checks</td>
+              <td class="py-5 px-4">Maandelijkse rapportage</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
 
   <!-- FAQ Section -->
-  <section class="py-20 bg-light" id="faq">
+  <section class="py-24 bg-gray-50" id="faq">
     <div class="container mx-auto px-4 max-w-3xl reveal">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">FAQ: Veelgestelde Vragen</h2>
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Veelgestelde vragen over Vrij Vlot</h2>
+        <p class="text-gray-600">Alles wat je moet weten over jouw nieuwe website.</p>
+      </div>
+
       <div class="space-y-4">
         <!-- FAQ Item 1 -->
-        <article class="bg-white rounded-lg shadow-sm faq-item overflow-hidden">
-          <button class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center focus:outline-none"
+        <article
+          class="bg-white rounded-xl shadow-sm faq-item overflow-hidden transition-all duration-300 border border-gray-100">
+          <button
+            class="w-full text-left px-8 py-6 font-bold flex justify-between items-center focus:outline-none group"
             aria-expanded="false">
-            <span>Hoe snel kan ik online zijn?</span>
-            <span class="text-primary transform transition-transform duration-300">▼</span>
+            <span class="text-lg text-dark">Hoe snel staat mijn website live?</span>
+            <span class="text-primary transform transition-transform duration-300 group-hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </span>
           </button>
-          <div class="faq-answer px-6 text-gray-600 bg-gray-50 transition-all duration-300 max-h-0 overflow-hidden">
-            <p class="py-4">Na de fotografie-sessie streef ik ernaar om de eerste versie binnen 24 uur live te hebben.
-              Snelheid is key.</p>
+          <div class="faq-answer px-8 text-gray-600 bg-white transition-all duration-300 max-h-0 overflow-hidden">
+            <p class="pb-8 leading-relaxed">
+              Als we alle informatie hebben, kan je basisconcept al binnen 48 uur klaarstaan. Inclusief de fotoshoot op
+              locatie streven we ernaar om alles binnen één week volledig live te hebben op je eigen domeinnaam.
+            </p>
           </div>
         </article>
+
         <!-- FAQ Item 2 -->
-        <article class="bg-white rounded-lg shadow-sm faq-item overflow-hidden">
-          <button class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center focus:outline-none"
+        <article
+          class="bg-white rounded-xl shadow-sm faq-item overflow-hidden transition-all duration-300 border border-gray-100">
+          <button
+            class="w-full text-left px-8 py-6 font-bold flex justify-between items-center focus:outline-none group"
             aria-expanded="false">
-            <span>Moet ik echt pas betalen als ik tevreden ben?</span>
-            <span class="text-primary transform transition-transform duration-300">▼</span>
+            <span class="text-lg text-dark">Moet ik zelf voor de foto’s zorgen?</span>
+            <span class="text-primary transform transition-transform duration-300 group-hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </span>
           </button>
-          <div class="faq-answer px-6 text-gray-600 bg-gray-50 transition-all duration-300 max-h-0 overflow-hidden">
-            <p class="py-4">Ja, absoluut. Ik geloof in mijn kwaliteit. We finetunen net zo lang tot jij 100% tevreden
-              bent, pas dan stuur ik de factuur.</p>
+          <div class="faq-answer px-8 text-gray-600 bg-white transition-all duration-300 max-h-0 overflow-hidden">
+            <p class="pb-8 leading-relaxed">
+              Dat mag, maar het hoeft niet. Bij het Pro- en Groeipakket komen we langs met onze Sony A7 IV om je
+              vakmanschap vlijmscherp vast te leggen. Professionele beelden zorgen voor 10x meer vertrouwen bij je
+              klanten.
+            </p>
           </div>
         </article>
+
         <!-- FAQ Item 3 -->
-        <article class="bg-white rounded-lg shadow-sm faq-item overflow-hidden">
-          <button class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center focus:outline-none"
+        <article
+          class="bg-white rounded-xl shadow-sm faq-item overflow-hidden transition-all duration-300 border border-gray-100">
+          <button
+            class="w-full text-left px-8 py-6 font-bold flex justify-between items-center focus:outline-none group"
             aria-expanded="false">
-            <span>Maak je ook webshops?</span>
-            <span class="text-primary transform transition-transform duration-300">▼</span>
+            <span class="text-lg text-dark">Zit ik vast aan een langdurig contract?</span>
+            <span class="text-primary transform transition-transform duration-300 group-hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </span>
           </button>
-          <div class="faq-answer px-6 text-gray-600 bg-gray-50 transition-all duration-300 max-h-0 overflow-hidden">
-            <p class="py-4">Mijn focus ligt op high-end one-pagers en portfolio websites. Voor complexe webshops verwijs
-              ik je graag door naar specialisten.</p>
+          <div class="faq-answer px-8 text-gray-600 bg-white transition-all duration-300 max-h-0 overflow-hidden">
+            <p class="pb-8 leading-relaxed">
+              Nee. Wij houden van eerlijk zakendoen. Onze servicepakketten zijn maandelijks opzegbaar. We willen dat je
+              bij ons blijft omdat je blij bent met je website, niet omdat je vastzit aan een contract.
+            </p>
+          </div>
+        </article>
+
+        <!-- FAQ Item 4 -->
+        <article
+          class="bg-white rounded-xl shadow-sm faq-item overflow-hidden transition-all duration-300 border border-gray-100">
+          <button
+            class="w-full text-left px-8 py-6 font-bold flex justify-between items-center focus:outline-none group"
+            aria-expanded="false">
+            <span class="text-lg text-dark">Wat als ik later iets wil aanpassen?</span>
+            <span class="text-primary transform transition-transform duration-300 group-hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer px-8 text-gray-600 bg-white transition-all duration-300 max-h-0 overflow-hidden">
+            <p class="pb-8 leading-relaxed">
+              Geen probleem. Stuur een appje of een mail met de wijziging en wij voeren het binnen 24 uur voor je door.
+              Dat is het gemak van ons onderhoudspakket.
+            </p>
+          </div>
+        </article>
+
+        <!-- FAQ Item 5 -->
+        <article
+          class="bg-white rounded-xl shadow-sm faq-item overflow-hidden transition-all duration-300 border border-gray-100">
+          <button
+            class="w-full text-left px-8 py-6 font-bold flex justify-between items-center focus:outline-none group"
+            aria-expanded="false">
+            <span class="text-lg text-dark">Regelen jullie ook mijn e-mail en domeinnaam?</span>
+            <span class="text-primary transform transition-transform duration-300 group-hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer px-8 text-gray-600 bg-white transition-all duration-300 max-h-0 overflow-hidden">
+            <p class="pb-8 leading-relaxed">
+              Ja, van A tot Z. Wij regelen de registratie, de beveiliging (SSL) en zorgen dat je professioneel kunt
+              mailen met je eigen bedrijfsnaam.
+            </p>
+          </div>
+        </article>
+
+        <!-- FAQ Item 6 -->
+        <article
+          class="bg-white rounded-xl shadow-sm faq-item overflow-hidden transition-all duration-300 border border-gray-100">
+          <button
+            class="w-full text-left px-8 py-6 font-bold flex justify-between items-center focus:outline-none group"
+            aria-expanded="false">
+            <span class="text-lg text-dark">Wat als ik complexe wensen heb of een webshop wil?</span>
+            <span class="text-primary transform transition-transform duration-300 group-hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer px-8 text-gray-600 bg-white transition-all duration-300 max-h-0 overflow-hidden">
+            <p class="pb-8 leading-relaxed">
+              Vrij Vlot is gespecialiseerd in snelle, krachtige websites voor vakmensen. Heb je zeer complexe eisen of
+              wilt u een uitgebreide webshop? Dan maken we graag een offerte op maat die past bij jouw specifieke
+              situatie.
+            </p>
           </div>
         </article>
       </div>
@@ -241,62 +411,233 @@
   <section class="py-20 bg-white">
     <div class="container mx-auto px-4 text-center reveal">
       <h2 class="text-3xl font-bold mb-12">Wat anderen zeggen</h2>
-      <blockquote class="max-w-2xl mx-auto italic text-gray-600 text-lg">
-        "Vrij Vlot Design heeft mijn verwachtingen overtroffen. De foto's zijn prachtig en de site stond binnen no-time
-        online. Een aanrader voor iedere ondernemer die professionaliteit zoekt."
-        <footer class="mt-4 font-bold text-dark not-italic">— Thomas, FysioAmsterdam</footer>
-      </blockquote>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+        <!-- Review 1 -->
+        <article
+          class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 reveal delay-100">
+          <div class="flex text-yellow-400 mb-4">★★★★★</div>
+          <p class="text-gray-600 mb-6 leading-relaxed">"Vrij Vlot Design heeft mijn verwachtingen overtroffen. De
+            foto's zijn prachtig en de site stond binnen no-time online. Een aanrader!"</p>
+          <footer class="font-bold text-dark flex items-center gap-3">
+            <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold">TH
+            </div>
+            <span>Thomas, FysioAmsterdam</span>
+          </footer>
+        </article>
+
+        <!-- Review 2 -->
+        <article
+          class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 reveal delay-200">
+          <div class="flex text-yellow-400 mb-4">★★★★★</div>
+          <p class="text-gray-600 mb-6 leading-relaxed">"Eindelijk een webdesigner die meedenkt. De overstap naar een
+            professionele one-pager heeft me direct meer klanten opgeleverd."</p>
+          <footer class="font-bold text-dark flex items-center gap-3">
+            <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold">SJ
+            </div>
+            <span>Sarah, Bakkerij Jansen</span>
+          </footer>
+        </article>
+
+        <!-- Review 3 -->
+        <article
+          class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 reveal delay-300">
+          <div class="flex text-yellow-400 mb-4">★★★★★</div>
+          <p class="text-gray-600 mb-6 leading-relaxed">"Snel, duidelijk en geen gedoe. De fotoshoot op locatie was
+            ontspannen en het resultaat mag er zijn. Top service."</p>
+          <footer class="font-bold text-dark flex items-center gap-3">
+            <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold">MK
+            </div>
+            <span>Mark, Klusbedrijf Kwaliteit</span>
+          </footer>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <footer class="py-20 bg-dark text-white relative" id="contact">
-    <div class="container mx-auto px-4 max-w-lg reveal">
-      <h2 class="text-3xl font-bold text-center mb-4">Start jouw project</h2>
-      <p class="text-center text-gray-400 mb-8">Vraag een gratis demo aan of neem direct contact op.</p>
+  <!-- Configurator Section (Contact) -->
+  <section class="py-24 bg-gray-50 border-t border-gray-100" id="configurator">
+    <div class="container mx-auto px-4 max-w-4xl reveal reveal-scale">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">Stel je website samen</h2>
+        <p class="text-gray-600">Personaliseer je pakket en ontvang binnen 24 uur een vrijblijvend concept.</p>
+      </div>
 
-      <form id="contact-form" action="https://formspree.io/f/mlgwjavg" method="POST" class="space-y-4">
-        <!-- Honeypot -->
-        <input type="text" name="_gotcha" style="display:none" />
+      <form id="contact-form" action="https://formspree.io/f/mlgwjavg" method="POST" enctype="multipart/form-data"
+        class="space-y-12">
+        <!-- Package Selection -->
+        <div>
+          <h3 class="text-xl font-bold mb-6 flex items-center gap-2 text-dark">
+            <span class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm">1</span>
+            Kies je bouwpakket
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <label class="relative cursor-pointer group">
+              <input type="radio" name="pakket" value="Starter" class="peer sr-only" checked>
+              <div
+                class="p-6 bg-white border-2 border-gray-100 rounded-xl peer-checked:border-primary peer-checked:bg-yellow-50/30 transition-all hover:bg-gray-50">
+                <div class="font-bold text-lg mb-1 text-dark">Starter</div>
+                <div class="text-primary font-bold">€495,-</div>
+              </div>
+            </label>
+            <label class="relative cursor-pointer group">
+              <input type="radio" name="pakket" value="Pro" class="peer sr-only">
+              <div
+                class="p-6 bg-white border-2 border-gray-100 rounded-xl peer-checked:border-primary peer-checked:bg-yellow-50/30 transition-all hover:bg-gray-50">
+                <div class="font-bold text-lg mb-1 text-dark">Pro</div>
+                <div class="text-primary font-bold">€745,-</div>
+              </div>
+            </label>
+            <label class="relative cursor-pointer group">
+              <input type="radio" name="pakket" value="Groei" class="peer sr-only">
+              <div
+                class="p-6 bg-white border-2 border-gray-100 rounded-xl peer-checked:border-primary peer-checked:bg-yellow-50/30 transition-all hover:bg-gray-50">
+                <div class="font-bold text-lg mb-1 text-dark">Groei Machine</div>
+                <div class="text-primary font-bold">€995,-</div>
+              </div>
+            </label>
+          </div>
+        </div>
 
-        <div>
-          <label for="name" class="block text-sm font-medium text-gray-400 mb-1">Naam *</label>
-          <input type="text" id="name" name="naam" required
-            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
-            placeholder="Jouw naam">
+        <!-- Service Toggle -->
+        <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+            <div>
+              <h3 class="text-xl font-bold mb-1 text-dark">Service & Onderhoud toevoegen?</h3>
+              <p class="text-gray-500 text-sm">Zorgeloze hosting, SSL en support vanaf €29,- p/m.</p>
+            </div>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" name="service_pakket" value="Ja" class="sr-only peer">
+              <div
+                class="w-14 h-7 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-primary">
+              </div>
+            </label>
+          </div>
         </div>
+
+        <!-- Contact Fields -->
         <div>
-          <label for="email" class="block text-sm font-medium text-gray-400 mb-1">E-mail *</label>
-          <input type="email" id="email" name="email" required
-            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
-            placeholder="jouw@email.nl">
+          <h3 class="text-xl font-bold mb-6 flex items-center gap-2 text-dark">
+            <span class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm">2</span>
+            Jouw gegevens
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <label for="name" class="block text-sm font-bold text-gray-700">Naam</label>
+              <input type="text" id="name" name="naam" required
+                class="w-full bg-white border-2 border-gray-100 rounded-xl px-4 py-4 focus:outline-none focus:border-primary transition-all text-lg"
+                placeholder="Hoe heet je?">
+            </div>
+            <div class="space-y-2">
+              <label for="company" class="block text-sm font-bold text-gray-700">Bedrijfsnaam</label>
+              <input type="text" id="company" name="bedrijf" required
+                class="w-full bg-white border-2 border-gray-100 rounded-xl px-4 py-4 focus:outline-none focus:border-primary transition-all text-lg"
+                placeholder="Naam van je zaak">
+            </div>
+            <div class="space-y-2 md:col-span-2">
+              <label for="email" class="block text-sm font-bold text-gray-700">E-mailadres</label>
+              <input type="email" id="email" name="email" required
+                class="w-full bg-white border-2 border-gray-100 rounded-xl px-4 py-4 focus:outline-none focus:border-primary transition-all text-lg"
+                placeholder="jouw@email.nl">
+            </div>
+          </div>
         </div>
-        <div>
-          <label for="phone" class="block text-sm font-medium text-gray-400 mb-1">Telefoon</label>
-          <input type="tel" id="phone" name="telefoon"
-            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
-            placeholder="06 12345678">
+
+        <!-- Submit -->
+        <div class="text-center pt-8">
+          <button type="submit" id="submit-btn"
+            class="w-full md:w-auto px-12 py-5 bg-primary hover:bg-yellow-600 text-white font-black text-xl rounded-2xl transition-all shadow-2xl hover:scale-105 active:scale-95 mb-4">
+            Vrijblijvend concept aanvragen
+          </button>
+          <p class="text-gray-500 font-medium">
+            Binnen 24 uur een live demo in je mailbox. Je zit nergens aan vast.
+          </p>
         </div>
-        <div>
-          <label for="message" class="block text-sm font-medium text-gray-400 mb-1">Bericht *</label>
-          <textarea id="message" name="bericht" required rows="4"
-            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
-            placeholder="Vertel kort over je project..."></textarea>
-        </div>
-        <button type="submit" id="submit-btn"
-          class="w-full bg-primary hover:bg-yellow-600 text-white font-bold py-3 px-4 rounded-lg transition-colors duration-300">
-          Aanvragen
-        </button>
 
         <!-- Status Messages -->
-        <div id="form-status" class="hidden text-center mt-4"></div>
+        <div id="form-status" class="hidden text-center mt-4 text-lg font-semibold"></div>
       </form>
 
-      <div class="mt-12 text-center text-gray-500 text-sm">
-        &copy; 2024 Vrij Vlot Design. Alle rechten voorbehouden.
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-[#1a1a1a] text-white pt-20 pb-10">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+        <!-- Column 1: Intro -->
+        <div class="space-y-4">
+          <h3 class="text-2xl font-black tracking-tighter mb-6">
+            VRIJ VLOT<span class="text-primary">.</span>
+          </h3>
+          <p class="text-gray-400 leading-relaxed">
+            Vrij Vlot Design: De webpartner voor vakmensen. Wij vertalen jouw vakmanschap naar een vlijmscherpe online
+            presentatie.
+          </p>
+          <div class="pt-4 border-t border-gray-800">
+            <p class="text-sm text-gray-500 italic">Handelsnaam van Zardy Freerunning Services.</p>
+            <p class="text-sm text-gray-500">Gevestigd in Leeuwarden, Friesland.</p>
+          </div>
+        </div>
+
+        <!-- Column 2: Details -->
+        <div class="space-y-6">
+          <h4 class="text-lg font-bold mb-6">Bedrijfsgegevens</h4>
+          <ul class="space-y-3 text-gray-400">
+            <li class="flex items-center gap-2">
+              <span class="text-primary">KvK:</span> 61831573
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-primary">BTW:</span> NL002214578B43
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-primary font-bold">@</span>
+              <a href="mailto:info@vrijvlotdesign.nl"
+                class="hover:text-[#005f73] transition-colors">info@vrijvlotdesign.nl</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Navigation -->
+        <div class="space-y-6">
+          <h4 class="text-lg font-bold mb-6">Informatie & Juridisch</h4>
+          <ul class="space-y-4 text-gray-400">
+            <li>
+              <a href="/privacy.html" class="hover:text-[#005f73] transition-colors flex items-center gap-2">
+                <span>→</span> Privacyverklaring
+              </a>
+            </li>
+            <li>
+              <a href="/voorwaarden.html" class="hover:text-[#005f73] transition-colors flex items-center gap-2">
+                <span>→</span> Algemene Voorwaarden
+              </a>
+            </li>
+            <li>
+              <a href="#faq" class="hover:text-[#005f73] transition-colors flex items-center gap-2">
+                <span>→</span> FAQ
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="pt-8 border-t border-gray-800 text-center">
+        <p class="text-gray-500 text-sm">
+          &copy; 2026 Vrij Vlot Design - Alle rechten voorbehouden.
+        </p>
       </div>
     </div>
   </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/31624893014" target="_blank"
+    class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white px-6 py-3 rounded-full shadow-2xl flex items-center gap-2 font-bold hover:scale-110 transition-transform active:scale-95">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+      <path
+        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+    </svg>
+    Vragen? App direct.
+  </a>
 
   <script type="module" src="/src/main.js"></script>
 </body>

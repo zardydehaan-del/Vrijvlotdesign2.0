@@ -16,19 +16,71 @@
   }
 }
 
-/* Custom Animation for Scroll Reveal */
+/* --- Scroll Animations (Intersection Observer) --- */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: all 0.8s ease-out;
+  filter: blur(5px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity;
 }
 
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+  filter: blur(0);
+}
+
+/* Entrance Variations */
+.reveal-left {
+  transform: translateX(-50px);
+}
+
+.reveal-right {
+  transform: translateX(50px);
+}
+
+.reveal-scale {
+  transform: scale(0.95);
+}
+
+.reveal-left.active,
+.reveal-right.active,
+.reveal-scale.active {
+  transform: translate(0) scale(1);
+}
+
+/* Stagger Delays (Utility classes for grid children) */
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.delay-200 {
+  transition-delay: 200ms;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.delay-400 {
+  transition-delay: 400ms;
+}
+
+.delay-500 {
+  transition-delay: 500ms;
 }
 
 /* Smooth Scrolling for anchor links */
 html {
   scroll-behavior: smooth;
+}
+
+/* FAQ Accordion Icon Rotation */
+.faq-item.active svg {
+  transform: rotate(45deg);
+}
+
+.faq-item.active {
+  border-color: var(--color-primary);
 }

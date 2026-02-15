@@ -1,26 +1,24 @@
 import './style.css'
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Menu Toggle (if we add a hamburger menu later, though onepager might just scroll)
-
-  // Scroll Reveal Animation
+  // Scroll Reveal Animation (Intersection Observer)
   const revealElements = document.querySelectorAll('.reveal');
 
-  const revealOnScroll = () => {
-    const windowHeight = window.innerHeight;
-    const elementVisible = 150;
-
-    revealElements.forEach((reveal) => {
-      const elementTop = reveal.getBoundingClientRect().top;
-      if (elementTop < windowHeight - elementVisible) {
-        reveal.classList.add('active');
-      }
-    });
+  const observerOptions = {
+    threshold: 0.15,
+    rootMargin: '0px 0px -50px 0px'
   };
 
-  window.addEventListener('scroll', revealOnScroll);
-  // Trigger once on load
-  revealOnScroll();
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target); // Trigger only once
+      }
+    });
+  }, observerOptions);
+
+  revealElements.forEach(el => observer.observe(el));
 
   // FAQ Accordion
   const faqs = document.querySelectorAll('.faq-item');
@@ -33,6 +31,25 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         answer.style.maxHeight = 0;
       }
+    });
+  });
+
+  // Package Selection Interaction (Mobile/Desktop)
+  const packages = document.querySelectorAll('.package-card');
+  packages.forEach(card => {
+    card.addEventListener('click', () => {
+      // Remove active state from all
+      packages.forEach(p => {
+        p.classList.remove('ring-4', 'ring-primary', 'bg-yellow-50', 'scale-105');
+        // Reset scale transform if it was managed by hover class but we want to sticky it? 
+        // Actually, let's just add a ring and slight background tint.
+        // We also want to keep the hover effects independent if possible, 
+        // but adding 'scale-105' manually might conflict with hover. 
+        // Let's just use ring and bg.
+      });
+
+      // Add active state to clicked
+      card.classList.add('ring-4', 'ring-primary', 'bg-yellow-50');
     });
   });
 
@@ -61,33 +78,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (response.ok) {
-          form.reset();
-          status.innerHTML = "Bedankt! Ik heb je aanvraag ontvangen en neem binnen 24 uur contact met je op.";
-          status.classList.remove('hidden', 'text-red-500');
-          status.classList.add('text-green-500');
-
-          // Optionally hide form fields
-          Array.from(form.elements).forEach(el => {
-            if (el.tagName !== 'DIV') el.style.display = 'none'; // Basic hiding, or use a class
-          });
-          status.style.display = 'block';
-
+          // Hide the form title and description too if possible, but at least the form
+          form.innerHTML = `
+            <div class="py-12 text-center">
+              <div class="text-6xl mb-6">✅</div>
+              <h3 class="text-3xl font-bold mb-4 text-dark">Aanvraag verzonden!</h3>
+              <p class="text-xl text-gray-600 mb-8">Bedankt! Ik heb je gegevens ontvangen. Je ontvangt binnen 24 uur een live demo in je mailbox.</p>
+              <button onclick="window.location.reload()" class="text-primary font-bold hover:underline">Nog een aanvraag doen?</button>
+            </div>
+          `;
         } else {
           const errorData = await response.json();
-          if (Object.hasOwn(errorData, 'errors')) {
-            status.innerHTML = errorData["errors"].map(error => error["message"]).join(", ");
-          } else {
-            status.innerHTML = "Er ging iets mis. Probeer het later nog eens of stuur direct een WhatsApp-bericht.";
-          }
-          status.classList.remove('hidden', 'text-green-500');
+          status.innerHTML = errorData["errors"] ? errorData["errors"].map(e => e.message).join(", ") : "Er ging iets mis.";
+          status.classList.remove('hidden');
           status.classList.add('text-red-500');
-          status.style.display = 'block';
         }
       } catch (error) {
-        status.innerHTML = "Er ging iets mis. Probeer het later nog eens of stuur direct een WhatsApp-bericht.";
-        status.classList.remove('hidden', 'text-green-500');
+        status.innerHTML = "Er ging iets mis. Probeer het later nog eens.";
+        status.classList.remove('hidden');
         status.classList.add('text-red-500');
-        status.style.display = 'block';
       } finally {
         submitBtn.disabled = false;
         submitBtn.innerText = originalBtnText;

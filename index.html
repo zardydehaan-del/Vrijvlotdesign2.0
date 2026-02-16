@@ -92,8 +92,16 @@
   </a>
 
   <!-- Hero Section -->
-  <header class="relative h-screen flex items-center justify-center overflow-hidden parallax"
-    style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/header.jpg');">
+  <header class="relative h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img src="/header.jpg" alt="Vrij Vlot Design Hero"
+        class="w-full h-full object-cover object-center transform scale-105 parallax-img"
+        style="filter: brightness(0.6);">
+      <!-- Overlay Gradient -->
+      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/60"></div>
+    </div>
+
     <div class="container mx-auto px-4 text-center text-white relative z-10 reveal active">
       <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
         Jouw vakmanschap verdient een website die wél werkt.

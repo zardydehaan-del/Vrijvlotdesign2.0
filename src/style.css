@@ -33,6 +33,12 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  @media (max-width: 768px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
 }
 
 /* --- Scroll Animations (Intersection Observer) --- */

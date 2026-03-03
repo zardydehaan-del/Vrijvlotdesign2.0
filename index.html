@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Space+Grotesk:wght@400;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="src/style.css">
 
@@ -103,77 +103,138 @@
     </div>
 
     <div class="container mx-auto px-4 text-center text-white relative z-10 reveal active">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-        Jouw vakmanschap verdient een website die wél werkt.
+      <h1 class="text-5xl md:text-7xl font-heading font-bold mb-6 leading-tight">
+        Jouw bedrijf is te goed om onzichtbaar te zijn.
       </h1>
-      <p class="text-xl md:text-2xl mb-8 font-light max-w-2xl mx-auto">
-        Vandaag in beeld, morgen online. Jouw professionele website inclusief high-end fotografie, live binnen 24 uur.
-        Betaal pas als je 100% tevreden bent.
+      <p class="text-xl md:text-2xl mb-8 font-light max-w-3xl mx-auto leading-relaxed">
+        Je bent goed in wat je doet. Maar als klanten je googelen, zien ze… niets. Of erger: een website die ze
+        wegjaagt. Vrij Vlot zorgt dat je er binnen 24 uur professioneel op staat — zonder gedoe, zonder technische
+        kennis.
       </p>
       <a href="#configurator"
-        class="inline-block bg-primary hover:bg-yellow-600 text-white font-semibold py-3 px-8 rounded-full transition-colors duration-300 shadow-lg transform hover:scale-105">
-        Vraag een gratis demo aan
+        class="inline-block bg-primary hover:bg-yellow-500 text-dark font-bold py-4 px-10 rounded-full transition-transform duration-300 shadow-2xl transform hover:scale-105 text-lg">
+        Vraag een gratis concept aan &rarr;
       </a>
     </div>
   </header>
 
+  <!-- Probleem Sectie -->
+  <section class="py-24 bg-dark text-white relative" id="probleem">
+    <div class="container mx-auto px-4 reveal">
+      <div class="text-center mb-16 max-w-4xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-heading font-bold mb-8 text-white leading-tight">
+          Elke dag zonder goede website, is een dag dat klanten doorlopen naar je concurrent.
+        </h2>
+        <p class="text-xl text-gray-300 leading-relaxed mb-6 font-light">
+          Je hebt geen tijd om maanden te wachten op een webbureau. Je wil geen peperduur traject met eindeloze
+          vergaderingen. En je wil zeker niet betalen voor iets waar je niet blij mee bent.
+        </p>
+        <p class="text-xl text-primary font-bold leading-relaxed">
+          Kleine ondernemers verdienen een eerlijke deal: snel online, professioneel beeld, en geen verplichtingen als
+          het niet bevalt. <br>
+          <span class="text-white mt-1 inline-block">Precies dat bied ik.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hoe het werkt -->
+  <section class="py-24 bg-white" id="hoe-het-werkt">
+    <div class="container mx-auto px-4 reveal">
+      <div class="text-center mb-16 max-w-2xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-heading font-bold mb-4 text-dark">Van niets naar online in drie stappen.
+        </h2>
+      </div>
+
+      <div class="flex flex-col md:flex-row items-stretch justify-center gap-8 lg:gap-12 relative max-w-6xl mx-auto">
+        <!-- Connecting Line for Desktop -->
+        <div
+          class="hidden md:block absolute top-[5rem] left-[15%] right-[15%] h-[2px] bg-gradient-to-r from-gray-100 via-gray-300 to-gray-100 z-0">
+        </div>
+
+        <!-- Stap 1 -->
+        <article
+          class="flex-1 relative z-10 bg-white border border-gray-100 rounded-2xl p-10 lg:p-12 shadow-md hover:shadow-xl transition-shadow text-center">
+          <div
+            class="w-16 h-16 mx-auto bg-primary text-dark rounded-full flex items-center justify-center text-3xl font-heading font-bold mb-6 shadow-lg shadow-primary/20">
+            1</div>
+          <h3 class="text-2xl font-bold mb-4 font-heading text-dark">Jij vertelt, ik luister</h3>
+          <p class="text-gray-600 font-light leading-relaxed">Een kort gesprek of formulier. Geen ingewikkeld
+            briefingdocument.</p>
+        </article>
+
+        <!-- Stap 2 -->
+        <article
+          class="flex-1 relative z-10 bg-dark border border-gray-900 rounded-2xl p-10 lg:p-12 shadow-xl hover:shadow-2xl transition-shadow text-center transform md:-translate-y-4">
+          <div
+            class="w-16 h-16 mx-auto bg-white text-primary rounded-full flex items-center justify-center text-3xl font-heading font-bold mb-6 shadow-md">
+            2</div>
+          <h3 class="text-2xl font-bold mb-4 font-heading text-white">Ik bouw, jij keurt goed</h3>
+          <p class="text-gray-300 font-light leading-relaxed">Binnen 24 uur een live concept. Jij geeft feedback, ik pas
+            aan.</p>
+        </article>
+
+        <!-- Stap 3 -->
+        <article
+          class="flex-1 relative z-10 bg-white border border-gray-100 rounded-2xl p-10 lg:p-12 shadow-md hover:shadow-xl transition-shadow text-center">
+          <div
+            class="w-16 h-16 mx-auto bg-primary text-dark rounded-full flex items-center justify-center text-3xl font-heading font-bold mb-6 shadow-lg shadow-primary/20">
+            3</div>
+          <h3 class="text-2xl font-bold mb-4 font-heading text-dark">Betalen bij tevredenheid</h3>
+          <p class="text-gray-600 font-light leading-relaxed">Pas als je 100% blij bent, stuur ik de factuur.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- Zardy de Haan: About Me Section -->
-  <section class="py-20 bg-light" id="over-mij">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+  <section class="py-24 bg-light border-t border-gray-100" id="over-mij">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-16 lg:gap-20">
       <div class="md:w-1/2 reveal reveal-left">
         <div class="relative group">
           <img src="overmij.jpg" alt="Zardy de Haan - Webdesigner & Fotograaf in Leeuwarden" loading="lazy"
-            class="rounded-lg shadow-2xl w-full h-auto object-cover aspect-[4/5] object-center">
+            class="rounded-xl shadow-2xl w-full h-auto object-cover aspect-[4/5] object-center">
           <div
-            class="absolute inset-0 bg-primary/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-            <span class="bg-white text-dark font-bold px-4 py-2 rounded-full shadow-lg">Zardy de Haan</span>
+            class="absolute inset-0 bg-primary/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-xl">
+            <span class="bg-white text-dark font-bold px-6 py-3 rounded-full shadow-lg font-heading">Zardy de
+              Haan</span>
           </div>
         </div>
       </div>
-      <article class="md:w-1/2 reveal reveal-right">
-        <h2 class="text-3xl md:text-5xl font-black mb-6 text-dark leading-tight">
-          Zardy de Haan: Van stuntwerk naar strak webdesign.
+      <article class="md:w-1/2 reveal reveal-right flex flex-col justify-center">
+        <h2 class="text-4xl md:text-5xl font-heading font-bold mb-8 text-dark leading-tight">
+          Zardy de Haan &mdash; van stuntwerk naar strak webdesign.
         </h2>
-        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-          Ruim <strong>20 jaar lang</strong> was mijn wereld die van adrenaline, discipline en precisie als
-          professioneel stuntman en freerunner. In die wereld is er geen ruimte voor 'halverwege'. Elke beweging moet
-          perfect zijn, elke landing gecontroleerd.
+        <p class="text-lg text-gray-600 mb-6 leading-relaxed font-light">
+          Ruim 20 jaar werkte ik als professioneel stuntman en freerunner. In die wereld is "goed genoeg" geen optie.
+          Elke landing moet kloppen. Elk detail telt.
         </p>
-        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-          Diezelfde onvermoeibare focus en topsportmentaliteit neem ik mee naar mijn werk als webdesigner. Ik geloof
-          niet in trage trajecten of vage afspraken. Ik werk nuchter, krachtig en met de obsessie voor detail die nodig
-          is om jouw vakmanschap binnen 24 uur professioneel online te krijgen.
-        </p>
-        <p class="text-lg text-gray-700 leading-relaxed font-semibold">
-          Geen praatjes, maar prestaties. Vandaag in beeld, morgen online.
+        <p class="text-lg text-dark leading-relaxed font-medium">
+          Die instelling neem ik mee naar elk websiteproject. Ik werk snel, nuchter en met oog voor detail &mdash; zodat
+          jij je kunt focussen op je vak, terwijl ik jouw bedrijf online neerzet zoals het hoort.
         </p>
       </article>
     </div>
   </section>
 
   <!-- Packages Section (De Bouwkosten) -->
-  <section class="py-24 bg-white" id="pakketten">
+  <section class="py-24 bg-gray-50" id="pakketten">
     <div class="container mx-auto px-4 text-center reveal">
-      <h2 class="text-4xl font-bold mb-4">De Bouwkosten</h2>
-      <p class="text-gray-600 mb-16 max-w-2xl mx-auto text-lg">Transparante prijzen voor vakmanschap. Betaling bij 100%
-        tevredenheid.</p>
+      <h2 class="text-4xl md:text-5xl font-heading font-bold mb-6 text-dark">De Bouwkosten</h2>
+      <p class="text-gray-600 mb-16 max-w-3xl mx-auto text-lg leading-relaxed">
+        Kies het pakket dat past bij waar je nu staat. Heb je al goede foto's? Begin dan met de Snelle Starter. Wil je
+        er meteen professioneel instaan? Kies Pro of Groei.
+      </p>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Snelle Starter -->
         <article
           class="package-card cursor-pointer bg-white border border-gray-100 rounded-2xl p-10 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col text-left reveal delay-100">
-          <h3 class="text-2xl font-bold mb-2">De Snelle Starter</h3>
-          <div class="text-4xl font-black text-primary mb-6">€495,- <span
-              class="text-base font-normal text-gray-500">excl. btw</span></div>
-          <ul class="space-y-4 mb-10 flex-grow text-gray-700">
-            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> <strong>High-end
-                onepager</strong></li>
-            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> Volledig responsive</li>
-            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> Professionele fotobewerking eigen
-              beelden
-            </li>
-            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> Live binnen 24 uur</li>
-          </ul>
+          <h3 class="text-3xl font-heading font-bold mb-2 text-dark">Snelle Starter</h3>
+          <div class="text-4xl font-heading font-black text-primary mb-6">€495,- <span
+              class="text-base font-normal text-gray-500 font-sans">excl. btw</span></div>
+          <p class="text-gray-600 mb-10 flex-grow leading-relaxed font-light">Geen foto's nodig? Geen probleem. Met jouw
+            eigen beelden zet ik een strakke, snelle onepager voor je neer. Live binnen 24 uur.</p>
           <a href="#configurator"
             class="block w-full py-4 bg-gray-900 text-white font-bold rounded-xl hover:bg-primary transition-colors text-center shadow-lg">
             Kies Starter
@@ -182,23 +243,18 @@
 
         <!-- Pro Vakman (Popular) -->
         <article
-          class="package-card cursor-pointer bg-white border-2 border-primary rounded-2xl p-10 shadow-xl transform md:-translate-y-4 relative flex flex-col text-left transition-all duration-500 hover:-translate-y-6 reveal delay-200">
+          class="package-card cursor-pointer bg-dark border-2 border-primary rounded-2xl p-10 shadow-2xl transform md:-translate-y-4 relative flex flex-col text-left transition-all duration-500 hover:-translate-y-6 reveal delay-200">
           <div
-            class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white text-sm font-bold px-6 py-2 rounded-full uppercase tracking-widest shadow-lg">
-            Meest Gekozen</div>
-          <h3 class="text-2xl font-bold mb-2 pt-2">De Pro Vakman</h3>
-          <div class="text-4xl font-black text-primary mb-6">€745,- <span
-              class="text-base font-normal text-gray-500">excl. btw</span></div>
-          <ul class="space-y-4 mb-10 flex-grow text-gray-700">
-            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> Alles uit Starter</li>
-            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> <strong>Sony A7 IV fotoshoot (1
-                uur)</strong></li>
-            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> Uitgebreid visueel portfolio</li>
-            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> Professionele tekst-optimalisatie
-            </li>
-          </ul>
+            class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-dark text-sm font-bold px-6 py-2 rounded-full uppercase tracking-widest shadow-lg">
+            ✦ Meest gekozen</div>
+          <h3 class="text-3xl font-heading font-bold mb-2 pt-2 text-white">De Pro Vakman</h3>
+          <div class="text-4xl font-heading font-black text-primary mb-6">€745,- <span
+              class="text-base font-normal text-gray-400 font-sans">excl. btw</span></div>
+          <p class="text-gray-300 mb-10 flex-grow leading-relaxed font-light">Wil je er echt uitzien als een vakman van
+            de eerste dag? Dan kom ik langs met mijn Sony A7 IV en leg ik jouw werk vast zoals het verdient. Inclusief
+            uitgebreid portfolio.</p>
           <a href="#configurator"
-            class="block w-full py-4 bg-primary text-white font-bold rounded-xl hover:bg-yellow-600 transition-colors text-center shadow-lg">
+            class="block w-full py-4 bg-primary text-dark font-bold rounded-xl hover:bg-yellow-500 transition-colors text-center shadow-lg hover:shadow-primary/50">
             Kies Pro
           </a>
         </article>
@@ -206,16 +262,12 @@
         <!-- Groei Machine -->
         <article
           class="package-card cursor-pointer bg-white border border-gray-100 rounded-2xl p-10 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col text-left reveal delay-300">
-          <h3 class="text-2xl font-bold mb-2">De Groei Machine</h3>
-          <div class="text-4xl font-black text-primary mb-6">€995,- <span
-              class="text-base font-normal text-gray-500">excl. btw</span></div>
-          <ul class="space-y-4 mb-10 flex-grow text-gray-700">
-            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> Alles uit Pro</li>
-            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> <strong>Cinematic Vertical
-                Video</strong></li>
-            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> Smart Offerte-formulier</li>
-            <li class="flex items-start"><span class="text-primary mr-3 mt-1">✓</span> QR-Review systeem</li>
-          </ul>
+          <h3 class="text-3xl font-heading font-bold mb-2 text-dark">De Groei Machine</h3>
+          <div class="text-4xl font-heading font-black text-primary mb-6">€995,- <span
+              class="text-base font-normal text-gray-500 font-sans">excl. btw</span></div>
+          <p class="text-gray-600 mb-10 flex-grow leading-relaxed font-light">Voor ondernemers die niet alleen gevonden
+            willen worden, maar ook actief nieuwe klanten willen binnenhalen. Met video, slimme offerteformulieren en
+            een reviewsysteem dat vertrouwen opbouwt.</p>
           <a href="#configurator"
             class="block w-full py-4 bg-gray-900 text-white font-bold rounded-xl hover:bg-primary transition-colors text-center shadow-lg">
             Kies Groei
@@ -229,10 +281,13 @@
   <section class="py-24 bg-dark text-white" id="diensten">
     <div class="container mx-auto px-4 reveal">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold mb-4">Abonnementen: Service & Onderhoud</h2>
-        <p class="text-gray-400 max-w-2xl mx-auto">Kies het service-niveau dat bij jouw ambities past.
-          <strong>Maandelijks
-            opzegbaar.</strong>
+        <h2 class="text-4xl md:text-5xl font-heading font-bold mb-6 text-primary">Je website live houden &mdash; zonder
+          dat je er naar om hoeft te kijken.</h2>
+        <p class="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed font-light">
+          Na de lancering zorg ik dat je website snel, veilig en up-to-date blijft. Hosting, SSL, wijzigingen, e-mail
+          &mdash; ik regel het. Jij focust op je werk.<br><br>
+          En niet tevreden? Je zegt gewoon op. Geen boetes, geen gedoe. <strong
+            class="text-white font-medium">Maandelijks opzegbaar.</strong>
         </p>
       </div>
 
@@ -241,17 +296,17 @@
           <thead>
             <tr class="border-b border-gray-800">
               <th class="py-6 px-4 text-gray-400 font-medium">Serviceonderdeel</th>
-              <th class="py-6 px-4">
+              <th class="py-6 px-4 w-1/4">
                 <div class="text-xl font-bold">Basis</div>
                 <div class="text-primary text-2xl font-black">€29,- <span class="text-sm font-normal text-gray-500">p/m
                     (excl. btw)</span></div>
               </th>
-              <th class="py-6 px-4 border-x border-gray-800 bg-gray-900/50">
-                <div class="text-xl font-bold">Pro</div>
+              <th class="py-6 px-4 border-x border-gray-800 bg-gray-900/50 w-1/4">
+                <div class="text-xl font-bold text-white">Pro</div>
                 <div class="text-primary text-2xl font-black">€49,- <span class="text-sm font-normal text-gray-500">p/m
                     (excl. btw)</span></div>
               </th>
-              <th class="py-6 px-4">
+              <th class="py-6 px-4 w-1/4">
                 <div class="text-xl font-bold">Groei</div>
                 <div class="text-primary text-2xl font-black">€79,- <span class="text-sm font-normal text-gray-500">p/m
                     (excl. btw)</span></div>
@@ -262,33 +317,33 @@
             <tr class="border-b border-gray-800 hover:bg-white/5 transition-colors">
               <td class="py-5 px-4 font-medium">Hosting & SSL Certificaat</td>
               <td class="py-5 px-4 text-primary text-xl">✓</td>
-              <td class="py-5 px-4 text-primary text-xl border-x border-gray-800 bg-gray-900/30 text-center">✓</td>
+              <td class="py-5 px-4 text-primary text-xl border-x border-gray-800 bg-gray-900/30">✓</td>
               <td class="py-5 px-4 text-primary text-xl">✓</td>
             </tr>
             <tr class="border-b border-gray-800 hover:bg-white/5 transition-colors">
               <td class="py-5 px-4 font-medium">E-mailaccounts</td>
               <td class="py-5 px-4">1 account</td>
-              <td class="py-5 px-4 border-x border-gray-800 bg-gray-900/30 text-center text-white font-semibold">3
+              <td class="py-5 px-4 border-x border-gray-800 bg-gray-900/30 text-white font-semibold">3
                 accounts</td>
               <td class="py-5 px-4">Onbeperkt</td>
             </tr>
             <tr class="border-b border-gray-800 hover:bg-white/5 transition-colors">
               <td class="py-5 px-4 font-medium">Support & Wijzigingen</td>
               <td class="py-5 px-4">Tekst-support</td>
-              <td class="py-5 px-4 border-x border-gray-800 bg-gray-900/30 text-center text-white font-semibold">
+              <td class="py-5 px-4 border-x border-gray-800 bg-gray-900/30 text-white font-semibold">
                 Portfolio updates</td>
               <td class="py-5 px-4 font-bold text-white">Priority support</td>
             </tr>
             <tr class="border-b border-gray-800 hover:bg-white/5 transition-colors">
               <td class="py-5 px-4 font-medium">Marketing & SEO</td>
               <td class="py-5 px-4 text-gray-600">-</td>
-              <td class="py-5 px-4 border-x border-gray-800 bg-gray-900/30 text-center">Google Maps beheer</td>
+              <td class="py-5 px-4 border-x border-gray-800 bg-gray-900/30">Google Maps beheer</td>
               <td class="py-5 px-4">SEO-monitoring</td>
             </tr>
             <tr class="hover:bg-white/5 transition-colors">
               <td class="py-5 px-4 font-medium">Controle & Rapportage</td>
               <td class="py-5 px-4 text-gray-600">-</td>
-              <td class="py-5 px-4 border-x border-gray-800 bg-gray-900/30 text-center">Kwartaal-checks</td>
+              <td class="py-5 px-4 border-x border-gray-800 bg-gray-900/30">Kwartaal-checks</td>
               <td class="py-5 px-4">Maandelijkse rapportage</td>
             </tr>
           </tbody>
@@ -300,59 +355,87 @@
   <!-- Portfolio Section -->
   <section class="py-24 bg-dark text-white border-b border-gray-800" id="portfolio">
     <div class="container mx-auto px-4 reveal">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold mb-4">Gerealiseerde Projecten</h2>
-        <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+      <div class="text-center mb-16 max-w-3xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-heading font-bold mb-6">Gerealiseerde Projecten</h2>
+        <p class="text-gray-300 text-xl font-light leading-relaxed">
           Onze websites vallen op door hun snelheid, kracht en design. Bekijk het zelf. Beweeg je muis over de laptops
           om de website te verkennen.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-12 mt-12">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-12">
         <!-- Zardy de Haan -->
         <article class="relative flex flex-col items-center group outline-none reveal reveal-left delay-100">
-          <h3 class="text-2xl font-bold mb-8 text-center">Zardy de Haan - Branding & Portfolio</h3>
+          <h3 class="text-xl font-bold mb-6 text-center font-heading">Zardy de Haan - Branding</h3>
           <a href="https://www.zardydehaan.com" target="_blank" rel="noopener noreferrer"
-            class="block w-full max-w-xl mx-auto transform transition-transform duration-500 xl:group-hover:scale-105">
+            class="block w-full max-w-screen-md mx-auto transform transition-transform duration-500 xl:group-hover:scale-105">
             <!-- MacBook Screen -->
             <div
-              class="relative bg-black rounded-t-2xl md:rounded-t-3xl p-2 md:p-3 pb-6 md:pb-8 shadow-2xl border-[3px] md:border-[4px] border-gray-800">
+              class="relative bg-black rounded-t-2xl p-2 md:p-3 pb-6 md:pb-8 shadow-2xl border-[3px] border-gray-700">
               <div
                 class="absolute top-1.5 md:top-2 left-1/2 transform -translate-x-1/2 w-2 h-2 md:w-3 md:h-3 bg-gray-900 rounded-full border border-gray-800 shadow-inner">
               </div>
               <div
                 class="relative w-full aspect-[16/10] bg-gray-100 overflow-hidden rounded md:rounded-md cursor-pointer showcase-browser"
-                style="background-image: url('zardy-mockup.png'); box-shadow: inset 0 0 10px rgba(0,0,0,0.1);">
+                style="background-image: url('zardy-mockup.png'); box-shadow: inset 0 0 10px rgba(0,0,0,0.1); background-size: cover;">
               </div>
             </div>
             <!-- MacBook Base -->
             <div
-              class="relative w-[112%] -left-[6%] h-3 md:h-5 bg-gradient-to-b from-gray-400 to-gray-500 rounded-b-xl md:rounded-b-2xl shadow-xl flex justify-center border-t border-gray-300">
-              <div class="w-1/4 h-1 md:h-2 bg-gray-300 rounded-b-sm md:rounded-b-md shadow-inner"></div>
+              class="relative w-[112%] -left-[6%] h-3 md:h-5 bg-gradient-to-b from-gray-400 to-gray-500 rounded-b-xl shadow-xl flex justify-center border-t border-gray-300">
+              <div class="w-1/4 h-1 md:h-2 bg-gray-300 rounded-b-sm shadow-inner"></div>
             </div>
           </a>
         </article>
 
         <!-- Hola Senor -->
-        <article class="relative flex flex-col items-center group outline-none reveal reveal-right delay-200">
-          <h3 class="text-2xl font-bold mb-8 text-center">Hola Señor - Kapper Landingpage</h3>
+        <article class="relative flex flex-col items-center group outline-none reveal delay-200">
+          <h3 class="text-xl font-bold mb-6 text-center font-heading">Hola Señor - Kapper</h3>
           <a href="https://holasenor.vrijvlotdesign.nl" target="_blank" rel="noopener noreferrer"
-            class="block w-full max-w-xl mx-auto transform transition-transform duration-500 xl:group-hover:scale-105">
+            class="block w-full max-w-screen-md mx-auto transform transition-transform duration-500 xl:group-hover:scale-105">
             <!-- MacBook Screen -->
             <div
-              class="relative bg-black rounded-t-2xl md:rounded-t-3xl p-2 md:p-3 pb-6 md:pb-8 shadow-2xl border-[3px] md:border-[4px] border-gray-800">
+              class="relative bg-black rounded-t-2xl p-2 md:p-3 pb-6 md:pb-8 shadow-2xl border-[3px] border-gray-700">
               <div
                 class="absolute top-1.5 md:top-2 left-1/2 transform -translate-x-1/2 w-2 h-2 md:w-3 md:h-3 bg-gray-900 rounded-full border border-gray-800 shadow-inner">
               </div>
               <div
                 class="relative w-full aspect-[16/10] bg-gray-100 overflow-hidden rounded md:rounded-md cursor-pointer showcase-browser"
-                style="background-image: url('holasenor-mockup.png'); box-shadow: inset 0 0 10px rgba(0,0,0,0.1);">
+                style="background-image: url('holasenor-mockup.png'); box-shadow: inset 0 0 10px rgba(0,0,0,0.1); background-size: cover;">
               </div>
             </div>
             <!-- MacBook Base -->
             <div
-              class="relative w-[112%] -left-[6%] h-3 md:h-5 bg-gradient-to-b from-gray-400 to-gray-500 rounded-b-xl md:rounded-b-2xl shadow-xl flex justify-center border-t border-gray-300">
-              <div class="w-1/4 h-1 md:h-2 bg-gray-300 rounded-b-sm md:rounded-b-md shadow-inner"></div>
+              class="relative w-[112%] -left-[6%] h-3 md:h-5 bg-gradient-to-b from-gray-400 to-gray-500 rounded-b-xl shadow-xl flex justify-center border-t border-gray-300">
+              <div class="w-1/4 h-1 md:h-2 bg-gray-300 rounded-b-sm shadow-inner"></div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Derde Project Placeholder -->
+        <article class="relative flex flex-col items-center group outline-none reveal reveal-right delay-300">
+          <h3 class="text-xl font-bold mb-6 text-center font-heading text-primary">Jouw Nieuwe Website?</h3>
+          <a href="#configurator"
+            class="block w-full max-w-screen-md mx-auto transform transition-transform duration-500 xl:group-hover:scale-105">
+            <!-- MacBook Screen -->
+            <div
+              class="relative bg-black rounded-t-2xl p-2 md:p-3 pb-6 md:pb-8 shadow-2xl border-[3px] border-gray-700">
+              <div
+                class="absolute top-1.5 md:top-2 left-1/2 transform -translate-x-1/2 w-2 h-2 md:w-3 md:h-3 bg-gray-900 rounded-full border border-gray-800 shadow-inner">
+              </div>
+              <div
+                class="relative w-full aspect-[16/10] bg-gray-900 overflow-hidden rounded md:rounded-md cursor-pointer flex flex-col items-center justify-center border border-gray-800">
+                <div
+                  class="text-primary font-bold text-xl group-hover:scale-110 transition-transform flex flex-col items-center">
+                  <span class="text-5xl font-light mb-2">+</span>
+                  Binnen 24 uur live
+                </div>
+              </div>
+            </div>
+            <!-- MacBook Base -->
+            <div
+              class="relative w-[112%] -left-[6%] h-3 md:h-5 bg-gradient-to-b from-gray-400 to-gray-500 rounded-b-xl shadow-xl flex justify-center border-t border-gray-300">
+              <div class="w-1/4 h-1 md:h-2 bg-gray-300 rounded-b-sm shadow-inner"></div>
             </div>
           </a>
         </article>
@@ -364,8 +447,7 @@
   <section class="py-24 bg-gray-50" id="faq">
     <div class="container mx-auto px-4 max-w-3xl reveal">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold mb-4">Veelgestelde vragen over Vrij Vlot</h2>
-        <p class="text-gray-600">Alles wat je moet weten over jouw nieuwe website.</p>
+        <h2 class="text-4xl md:text-5xl font-heading font-bold mb-4 text-dark">Veelgestelde vragen</h2>
       </div>
 
       <div class="space-y-4">
@@ -375,7 +457,7 @@
           <button
             class="w-full text-left px-8 py-6 font-bold flex justify-between items-center focus:outline-none group"
             aria-expanded="false">
-            <span class="text-lg text-dark">Hoe snel staat mijn website live?</span>
+            <span class="text-xl text-dark font-heading">Hoe snel staat mijn website live?</span>
             <span class="text-primary transform transition-transform duration-300 group-hover:scale-110">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -384,9 +466,9 @@
             </span>
           </button>
           <div class="faq-answer px-8 text-gray-600 bg-white transition-all duration-300 max-h-0 overflow-hidden">
-            <p class="pb-8 leading-relaxed">
-              Als we alle informatie hebben, kan je basisconcept al binnen 48 uur klaarstaan. Inclusief de fotoshoot op
-              locatie streven we ernaar om alles binnen één week volledig live te hebben op je eigen domeinnaam.
+            <p class="pb-8 leading-relaxed font-light">
+              Als ik alle informatie heb, staat je basisconcept binnen 24 uur klaar. Inclusief fotoshoot op locatie
+              streef ik ernaar om alles binnen één week volledig live te hebben op je eigen domeinnaam.
             </p>
           </div>
         </article>
@@ -397,7 +479,7 @@
           <button
             class="w-full text-left px-8 py-6 font-bold flex justify-between items-center focus:outline-none group"
             aria-expanded="false">
-            <span class="text-lg text-dark">Moet ik zelf voor de foto’s zorgen?</span>
+            <span class="text-xl text-dark font-heading">Hoe werkt de betaling?</span>
             <span class="text-primary transform transition-transform duration-300 group-hover:scale-110">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -406,10 +488,10 @@
             </span>
           </button>
           <div class="faq-answer px-8 text-gray-600 bg-white transition-all duration-300 max-h-0 overflow-hidden">
-            <p class="pb-8 leading-relaxed">
-              Dat mag, maar het hoeft niet. Bij het Pro- en Groeipakket komen we langs met onze Sony A7 IV om je
-              vakmanschap vlijmscherp vast te leggen. Professionele beelden zorgen voor 10x meer vertrouwen bij je
-              klanten.
+            <p class="pb-8 leading-relaxed font-light">
+              Bij de Pro en Groei pakketten betaal je 50% bij de start &mdash; daarna plan ik de werkzaamheden en
+              eventuele fotoshoot in. De resterende 50% betaal je pas als je tevreden bent met het resultaat. Pas dan
+              gaat de website live.
             </p>
           </div>
         </article>
@@ -420,7 +502,7 @@
           <button
             class="w-full text-left px-8 py-6 font-bold flex justify-between items-center focus:outline-none group"
             aria-expanded="false">
-            <span class="text-lg text-dark">Zit ik vast aan een langdurig contract?</span>
+            <span class="text-xl text-dark font-heading">Moet ik zelf voor de foto's zorgen?</span>
             <span class="text-primary transform transition-transform duration-300 group-hover:scale-110">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -429,9 +511,10 @@
             </span>
           </button>
           <div class="faq-answer px-8 text-gray-600 bg-white transition-all duration-300 max-h-0 overflow-hidden">
-            <p class="pb-8 leading-relaxed">
-              Nee. Wij houden van eerlijk zakendoen. Onze servicepakketten zijn maandelijks opzegbaar. We willen dat je
-              bij ons blijft omdat je blij bent met je website, niet omdat je vastzit aan een contract.
+            <p class="pb-8 leading-relaxed font-light">
+              Dat mag, maar het hoeft niet. Bij het Pro- en Groeipakket kom ik langs met mijn Sony A7 IV om jouw
+              vakmanschap scherp vast te leggen. Professionele beelden zorgen voor aanzienlijk meer vertrouwen bij
+              potentiële klanten.
             </p>
           </div>
         </article>
@@ -442,7 +525,7 @@
           <button
             class="w-full text-left px-8 py-6 font-bold flex justify-between items-center focus:outline-none group"
             aria-expanded="false">
-            <span class="text-lg text-dark">Wat als ik later iets wil aanpassen?</span>
+            <span class="text-xl text-dark font-heading">Hoeveel aanpassingen kan ik doorvoeren?</span>
             <span class="text-primary transform transition-transform duration-300 group-hover:scale-110">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -451,9 +534,9 @@
             </span>
           </button>
           <div class="faq-answer px-8 text-gray-600 bg-white transition-all duration-300 max-h-0 overflow-hidden">
-            <p class="pb-8 leading-relaxed">
-              Geen probleem. Stuur een appje of een mail met de wijziging en wij voeren het binnen 24 uur voor je door.
-              Dat is het gemak van ons onderhoudspakket.
+            <p class="pb-8 leading-relaxed font-light">
+              Standaard zijn er twee correctierondes inbegrepen. Je geeft je feedback gebundeld door, ik verwerk het.
+              Extra aanpassingen na de tweede ronde zijn mogelijk, maar worden apart gefactureerd.
             </p>
           </div>
         </article>
@@ -464,7 +547,7 @@
           <button
             class="w-full text-left px-8 py-6 font-bold flex justify-between items-center focus:outline-none group"
             aria-expanded="false">
-            <span class="text-lg text-dark">Regelen jullie ook mijn e-mail en domeinnaam?</span>
+            <span class="text-xl text-dark font-heading">Wat als ik later iets wil aanpassen?</span>
             <span class="text-primary transform transition-transform duration-300 group-hover:scale-110">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -473,9 +556,9 @@
             </span>
           </button>
           <div class="faq-answer px-8 text-gray-600 bg-white transition-all duration-300 max-h-0 overflow-hidden">
-            <p class="pb-8 leading-relaxed">
-              Ja, van A tot Z. Wij regelen de registratie, de beveiliging (SSL) en zorgen dat je professioneel kunt
-              mailen met je eigen bedrijfsnaam.
+            <p class="pb-8 leading-relaxed font-light">
+              Geen probleem. Stuur een appje of mailtje en ik voer de wijziging binnen 24 uur door. Dat is precies
+              waarvoor het onderhoudspakket bestaat.
             </p>
           </div>
         </article>
@@ -486,7 +569,7 @@
           <button
             class="w-full text-left px-8 py-6 font-bold flex justify-between items-center focus:outline-none group"
             aria-expanded="false">
-            <span class="text-lg text-dark">Wat als ik complexe wensen heb of een webshop wil?</span>
+            <span class="text-xl text-dark font-heading">Zit ik vast aan een contract?</span>
             <span class="text-primary transform transition-transform duration-300 group-hover:scale-110">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -495,10 +578,98 @@
             </span>
           </button>
           <div class="faq-answer px-8 text-gray-600 bg-white transition-all duration-300 max-h-0 overflow-hidden">
-            <p class="pb-8 leading-relaxed">
-              Vrij Vlot is gespecialiseerd in snelle, krachtige websites voor vakmensen. Heb je zeer complexe eisen of
-              wilt u een uitgebreide webshop? Dan maken we graag een offerte op maat die past bij jouw specifieke
-              situatie.
+            <p class="pb-8 leading-relaxed font-light">
+              Nee. De servicepakketten zijn maandelijks opzegbaar met 30 dagen opzegtermijn. Ik wil dat je blijft omdat
+              je blij bent met je website &mdash; niet omdat je vastzit.
+            </p>
+          </div>
+        </article>
+
+        <!-- FAQ Item 7 -->
+        <article
+          class="bg-white rounded-xl shadow-sm faq-item overflow-hidden transition-all duration-300 border border-gray-100">
+          <button
+            class="w-full text-left px-8 py-6 font-bold flex justify-between items-center focus:outline-none group"
+            aria-expanded="false">
+            <span class="text-xl text-dark font-heading">Wat gebeurt er als ik mijn abonnement opzeg?</span>
+            <span class="text-primary transform transition-transform duration-300 group-hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer px-8 text-gray-600 bg-white transition-all duration-300 max-h-0 overflow-hidden">
+            <p class="pb-8 leading-relaxed font-light">
+              Na opzegging vervallen de hosting en het e-mailaccount. Wil je de website verhuizen naar een andere
+              partij? Dat regel ik voor je tegen een eenmalige vergoeding van €95,-.
+            </p>
+          </div>
+        </article>
+
+        <!-- FAQ Item 8 -->
+        <article
+          class="bg-white rounded-xl shadow-sm faq-item overflow-hidden transition-all duration-300 border border-gray-100">
+          <button
+            class="w-full text-left px-8 py-6 font-bold flex justify-between items-center focus:outline-none group"
+            aria-expanded="false">
+            <span class="text-xl text-dark font-heading">Regelen jullie ook mijn e-mail en domeinnaam?</span>
+            <span class="text-primary transform transition-transform duration-300 group-hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer px-8 text-gray-600 bg-white transition-all duration-300 max-h-0 overflow-hidden">
+            <p class="pb-8 leading-relaxed font-light">
+              Ja, van A tot Z. Ik regel de registratie, de beveiliging (SSL) en zorg dat je professioneel kunt mailen
+              met je eigen bedrijfsnaam.
+            </p>
+          </div>
+        </article>
+
+        <!-- FAQ Item 9 -->
+        <article
+          class="bg-white rounded-xl shadow-sm faq-item overflow-hidden transition-all duration-300 border border-gray-100">
+          <button
+            class="w-full text-left px-8 py-6 font-bold flex justify-between items-center focus:outline-none group"
+            aria-expanded="false">
+            <span class="text-xl text-dark font-heading">Wie is eigenaar van mijn website en foto's?</span>
+            <span class="text-primary transform transition-transform duration-300 group-hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer px-8 text-gray-600 bg-white transition-all duration-300 max-h-0 overflow-hidden">
+            <p class="pb-8 leading-relaxed font-light">
+              Na volledige betaling krijg jij een exclusive licentie om de website te gebruiken op jouw domeinnaam. De
+              gemaakte foto's mag je vrij gebruiken op je website en social media. Ik mag de beelden ook gebruiken voor
+              mijn eigen portfolio &mdash; tenzij je dat liever niet hebt.
+            </p>
+          </div>
+        </article>
+
+        <!-- FAQ Item 10 -->
+        <article
+          class="bg-white rounded-xl shadow-sm faq-item overflow-hidden transition-all duration-300 border border-gray-100">
+          <button
+            class="w-full text-left px-8 py-6 font-bold flex justify-between items-center focus:outline-none group"
+            aria-expanded="false">
+            <span class="text-xl text-dark font-heading">Wat als ik complexe wensen heb of een webshop wil?</span>
+            <span class="text-primary transform transition-transform duration-300 group-hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer px-8 text-gray-600 bg-white transition-all duration-300 max-h-0 overflow-hidden">
+            <p class="pb-8 leading-relaxed font-light">
+              Vrij Vlot is gespecialiseerd in snelle, krachtige websites voor kleine ondernemers. Heb je zeer specifieke
+              eisen of wil je een uitgebreide webshop? Dan maak ik graag een offerte op maat.
             </p>
           </div>
         </article>
@@ -557,11 +728,11 @@
             <span class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm">1</span>
             Kies je bouwpakket
           </h3>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <label class="relative cursor-pointer group">
-              <input type="radio" name="pakket" value="Starter" class="peer sr-only" checked>
+              <input type="radio" name="pakket" value="Starter" class="peer sr-only">
               <div
-                class="p-6 bg-white border-2 border-gray-100 rounded-xl peer-checked:border-primary peer-checked:bg-yellow-50/30 transition-all hover:bg-gray-50">
+                class="p-6 bg-white border-2 border-gray-100 rounded-xl peer-checked:border-primary peer-checked:bg-yellow-50/30 transition-all hover:bg-gray-50 h-full flex flex-col justify-center">
                 <div class="font-bold text-lg mb-1 text-dark">Starter</div>
                 <div class="text-primary font-bold">€495,- <span class="font-normal text-xs text-gray-500">excl.
                     btw</span></div>
@@ -570,7 +741,7 @@
             <label class="relative cursor-pointer group">
               <input type="radio" name="pakket" value="Pro" class="peer sr-only">
               <div
-                class="p-6 bg-white border-2 border-gray-100 rounded-xl peer-checked:border-primary peer-checked:bg-yellow-50/30 transition-all hover:bg-gray-50">
+                class="p-6 bg-white border-2 border-gray-100 rounded-xl peer-checked:border-primary peer-checked:bg-yellow-50/30 transition-all hover:bg-gray-50 h-full flex flex-col justify-center">
                 <div class="font-bold text-lg mb-1 text-dark">Pro</div>
                 <div class="text-primary font-bold">€745,- <span class="font-normal text-xs text-gray-500">excl.
                     btw</span></div>
@@ -579,10 +750,18 @@
             <label class="relative cursor-pointer group">
               <input type="radio" name="pakket" value="Groei" class="peer sr-only">
               <div
-                class="p-6 bg-white border-2 border-gray-100 rounded-xl peer-checked:border-primary peer-checked:bg-yellow-50/30 transition-all hover:bg-gray-50">
+                class="p-6 bg-white border-2 border-gray-100 rounded-xl peer-checked:border-primary peer-checked:bg-yellow-50/30 transition-all hover:bg-gray-50 h-full flex flex-col justify-center">
                 <div class="font-bold text-lg mb-1 text-dark">Groei Machine</div>
                 <div class="text-primary font-bold">€995,- <span class="font-normal text-xs text-gray-500">excl.
                     btw</span></div>
+              </div>
+            </label>
+            <label class="relative cursor-pointer group">
+              <input type="radio" name="pakket" value="Geen_Vraag" class="peer sr-only">
+              <div
+                class="p-6 bg-white border-2 border-gray-100 rounded-xl peer-checked:border-primary peer-checked:bg-yellow-50/30 transition-all hover:bg-gray-50 h-full flex flex-col justify-center">
+                <div class="font-bold text-lg mb-1 text-dark">Geen pakket</div>
+                <div class="text-gray-500 font-medium text-sm">Ik heb alleen een vraag</div>
               </div>
             </label>
           </div>
@@ -659,6 +838,24 @@
         <div id="form-status" class="hidden text-center mt-4 text-lg font-semibold"></div>
       </form>
 
+  </section>
+
+  <!-- Afsluitende CTA -->
+  <section class="py-32 bg-dark text-white relative overflow-hidden" id="cta">
+    <div class="absolute inset-0 z-0 opacity-20"
+      style="background: radial-gradient(circle at center, var(--color-primary) 0%, transparent 60%);"></div>
+    <div class="container mx-auto px-4 text-center relative z-10 reveal">
+      <h2 class="text-5xl md:text-6xl font-heading font-black mb-6 text-white leading-tight">Klaar om er professioneel
+        op te staan?</h2>
+      <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
+        Vraag vandaag een gratis concept aan. Binnen 24 uur zie je hoe jouw nieuwe website eruit kan zien &mdash; zonder
+        verplichtingen, zonder risico.
+      </p>
+      <a href="#configurator"
+        class="inline-block bg-primary hover:bg-yellow-500 text-dark font-black py-5 px-12 rounded-full transition-transform duration-300 shadow-2xl transform hover:scale-105 hover:-translate-y-1 text-xl">
+        Stel mijn website samen &rarr;
+      </a>
+    </div>
   </section>
 
   <!-- Footer Section -->

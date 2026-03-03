@@ -4,13 +4,13 @@
   --color-primary: #f59e0b;
   --color-dark: #111827;
   --color-light: #f3f4f6;
-  --font-sans: 'Montserrat', sans-serif;
-  --font-serif: 'EB Garamond', serif;
+  --font-sans: 'DM Sans', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
 }
 
 @layer base {
   body {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
   }
 
   h1,
@@ -19,10 +19,8 @@
   h4,
   h5,
   h6,
-  nav,
-  button,
-  .font-sans {
-    font-family: var(--font-sans);
+  .font-heading {
+    font-family: var(--font-heading);
   }
 }
 
